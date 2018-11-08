@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
            solution.setText("Correct");
            return true;
         }else {
-            solution.setText("False");
+            solution.setText("Try again.");
         }
         return false;
     }
