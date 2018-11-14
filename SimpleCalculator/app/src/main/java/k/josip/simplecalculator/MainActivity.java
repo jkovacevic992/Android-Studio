@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         buttonDivision = findViewById(R.id.buttonDivision);
         buttonMultiplication = findViewById(R.id.buttonMultiplication);
         buttonSubtraction = findViewById(R.id.buttonSubtraction);
-        buttonResult = findViewById(R.id.buttonResult);
+        buttonResult = findViewById(R.id.buttonEquals);
         buttonDel = findViewById(R.id.buttonDel);
         buttonDot = findViewById(R.id.buttonDot);
         txtNumbers = (EditText)findViewById(R.id.txtNumbers);
