@@ -16,15 +16,18 @@ public class AndroidMeActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             BodyPartFragment headFragment = new BodyPartFragment();
             headFragment.setmImageIds(AndroidImageAssets.getHeads());
-            headFragment.setmListIndex(0);
+            int headIndex = getIntent().getIntExtra("headIndex",0);
+            headFragment.setmListIndex(headIndex);
 
             BodyPartFragment bodyFragment = new BodyPartFragment();
             bodyFragment.setmImageIds(AndroidImageAssets.getBodies());
-            bodyFragment.setmListIndex(0);
+            int bodyIndex = getIntent().getIntExtra("bodyIndex",0);
+            bodyFragment.setmListIndex(bodyIndex);
 
             BodyPartFragment legFragment = new BodyPartFragment();
             legFragment.setmImageIds(AndroidImageAssets.getLegs());
-            legFragment.setmListIndex(0);
+            int legIndex = getIntent().getIntExtra("legIndex",0);
+            legFragment.setmListIndex(legIndex);
 
 
             FragmentManager fragmentManager = getSupportFragmentManager();
