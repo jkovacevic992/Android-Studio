@@ -15,6 +15,12 @@
         android:paddingBottom="16dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:paddingTop="16dp"
-    ></LinearLayout>
+        android:paddingTop="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"
+            android:id="@+id/head_container"/>
+    </LinearLayout>
 </ScrollView>
