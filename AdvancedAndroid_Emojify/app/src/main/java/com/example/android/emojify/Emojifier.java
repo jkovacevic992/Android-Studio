@@ -13,7 +13,7 @@ import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
 
 public class Emojifier {
-    static final String LOG_TAG="";
+    static final String LOG_TAG=Emojifier.class.getSimpleName();
     private static final double SMILING_PROB_THRESHOLD = .15;
     private static final double EYE_OPEN_PROB_THRESHOLD = .5;
     private static final float EMOJI_SCALE_FACTOR = .9f;
@@ -34,7 +34,6 @@ public class Emojifier {
         }else{
             for (int i=0; i<faces.size(); i++){
                 Face face = faces.valueAt(i);
-                whichEmoji(face);
                 Bitmap emojiBitmap;
                 switch (whichEmoji(face)){
                     case SMILE:
